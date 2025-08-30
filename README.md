@@ -33,12 +33,14 @@ A complete, production-ready implementation of design patterns using modern C# 1
 
 ```bash
 # Clone and run
-git clone https://github.com/yourusername/DesignPatternsPractice.git
-cd DesignPatternsPractice
+git clone https://github.com/sanjeevanannuri/LearnDesignPatterns.git
+cd LearnDesignPatterns
 dotnet run --project DesignPatternsPractice.App
 
 # Choose any pattern from the interactive menu!
 ```
+
+📺 **Watch the Video Tutorial**: [Design Patterns Explained](https://youtu.be/fx08IcKMCNE) - Complete walkthrough of all patterns with practical examples!
 
 ## 🏗️ All 23 Patterns Covered
 

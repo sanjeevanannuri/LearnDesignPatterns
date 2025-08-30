@@ -229,8 +229,8 @@ DesignPatternsPractice.App/
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/DesignPatternsPractice.git
-cd DesignPatternsPractice
+git clone https://github.com/sanjeevanannuri/LearnDesignPatterns.git
+cd LearnDesignPatterns
 
 # Restore dependencies
 dotnet restore
@@ -380,7 +380,7 @@ We welcome contributions! Here's how you can help:
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -404,10 +404,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [C# Design Guidelines](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/) - Microsoft's recommendations
 - [Gang of Four Patterns](https://en.wikipedia.org/wiki/Design_Patterns) - Wikipedia reference
 
-### Video Courses
-- [Design Patterns in C#](https://www.pluralsight.com/courses/design-patterns-c-sharp) - Pluralsight
-- [C# Design Patterns](https://www.linkedin.com/learning/c-sharp-design-patterns-part-1) - LinkedIn Learning
-- [Software Architecture](https://www.coursera.org/learn/software-architecture) - Coursera
+
 
 ## 📊 Project Stats
 
@@ -423,9 +420,9 @@ If this project helped you learn design patterns, please consider giving it a st
 
 ## 📞 Contact & Support
 
-- **Issues** - [GitHub Issues](https://github.com/yourusername/DesignPatternsPractice/issues)
-- **Discussions** - [GitHub Discussions](https://github.com/yourusername/DesignPatternsPractice/discussions)
-- **Email** - your.email@example.com (replace with your email)
+- **Issues** - [GitHub Issues](https://github.com/sanjeevanannuri/LearnDesignPatterns/issues)
+- **Discussions** - [GitHub Discussions](https://github.com/sanjeevanannuri/LearnDesignPatterns/discussions)
+- **Repository** - [LearnDesignPatterns](https://github.com/sanjeevanannuri/LearnDesignPatterns)
 
 ---
 
