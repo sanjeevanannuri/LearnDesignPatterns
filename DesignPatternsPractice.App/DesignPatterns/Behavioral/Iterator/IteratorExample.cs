@@ -234,7 +234,7 @@ namespace DesignPatterns.Behavioral.Iterator
             }
 
             var node = _stack.Pop();
-            
+
             // Add children in reverse order for left-to-right traversal
             for (int i = node.Children.Count - 1; i >= 0; i--)
             {
@@ -278,7 +278,7 @@ namespace DesignPatterns.Behavioral.Iterator
             }
 
             var node = _queue.Dequeue();
-            
+
             // Add all children to queue
             foreach (var child in node.Children)
             {
@@ -447,7 +447,7 @@ namespace DesignPatterns.Behavioral.Iterator
             }
 
             var profile = _queue.Dequeue();
-            
+
             // Add friends of current profile to queue
             foreach (var friend in profile.Friends)
             {

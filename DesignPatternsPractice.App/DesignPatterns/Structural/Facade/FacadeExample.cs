@@ -10,7 +10,7 @@ namespace DesignPatterns.Structural.Facade
 
     public class Memory
     {
-        public void Load(long position, byte[] data) 
+        public void Load(long position, byte[] data)
             => Console.WriteLine($"Memory: Loading {data.Length} bytes at position {position}");
     }
 

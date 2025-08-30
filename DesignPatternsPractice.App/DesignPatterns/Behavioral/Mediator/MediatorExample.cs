@@ -117,7 +117,7 @@ namespace DesignPatterns.Behavioral.Mediator
 
     public class PassengerAircraft : Aircraft
     {
-        public PassengerAircraft(IAirTrafficControlMediator mediator, string callSign) 
+        public PassengerAircraft(IAirTrafficControlMediator mediator, string callSign)
             : base(mediator, callSign)
         {
         }
@@ -142,7 +142,7 @@ namespace DesignPatterns.Behavioral.Mediator
 
     public class CargoAircraft : Aircraft
     {
-        public CargoAircraft(IAirTrafficControlMediator mediator, string callSign) 
+        public CargoAircraft(IAirTrafficControlMediator mediator, string callSign)
             : base(mediator, callSign)
         {
         }
@@ -192,9 +192,10 @@ namespace DesignPatterns.Behavioral.Mediator
             {
                 _runwayStatus[availableRunway] = false;
                 aircraft.ReceiveInstruction($"Landing cleared on {availableRunway}");
-                
+
                 // Simulate landing completion after instruction
-                Task.Delay(100).ContinueWith(_ => {
+                Task.Delay(100).ContinueWith(_ =>
+                {
                     _runwayStatus[availableRunway] = true;
                     aircraft.ReceiveInstruction($"Landing completed. Please taxi to gate. {availableRunway} is now available");
                 });
@@ -212,9 +213,10 @@ namespace DesignPatterns.Behavioral.Mediator
             {
                 _runwayStatus[availableRunway] = false;
                 aircraft.ReceiveInstruction($"Takeoff cleared on {availableRunway}");
-                
+
                 // Simulate takeoff completion after instruction
-                Task.Delay(100).ContinueWith(_ => {
+                Task.Delay(100).ContinueWith(_ =>
+                {
                     _runwayStatus[availableRunway] = true;
                     aircraft.ReceiveInstruction($"Takeoff completed. Contact departure control. {availableRunway} is now available");
                 });
@@ -385,7 +387,7 @@ namespace DesignPatterns.Behavioral.Mediator
 
         private void ValidateLoginButton()
         {
-            bool isValid = !string.IsNullOrEmpty(_usernameTextBox.Value) && 
+            bool isValid = !string.IsNullOrEmpty(_usernameTextBox.Value) &&
                           !string.IsNullOrEmpty(_passwordTextBox.Value);
             Console.WriteLine($"Login button {(isValid ? "enabled" : "disabled")}");
         }
@@ -394,7 +396,7 @@ namespace DesignPatterns.Behavioral.Mediator
         {
             Console.WriteLine($"Attempting login for user: {_usernameTextBox.Value}");
             Console.WriteLine($"Remember me: {_rememberMeCheckBox.IsChecked}");
-            
+
             if (_usernameTextBox.Value.Contains("admin"))
             {
                 Console.WriteLine("Login successful! Welcome, Admin!");

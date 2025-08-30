@@ -355,7 +355,7 @@ namespace DesignPatterns.Behavioral.Interpreter
             }
 
             var columns = Table[0].Keys.ToList();
-            
+
             // Print header
             Console.WriteLine(string.Join(" | ", columns.Select(c => c.PadRight(10))));
             Console.WriteLine(new string('-', columns.Count * 13 - 3));
@@ -446,7 +446,7 @@ namespace DesignPatterns.Behavioral.Interpreter
         {
             Console.WriteLine($"Executing ORDER BY {_column} {(_ascending ? "ASC" : "DESC")}");
             var sourceData = _source.Interpret(context);
-            
+
             var result = sourceData.OrderBy(row => row.ContainsKey(_column) ? row[_column] : null).ToList();
             if (!_ascending)
             {
@@ -537,7 +537,7 @@ namespace DesignPatterns.Behavioral.Interpreter
         {
             var left = context.GetVariable(_leftVariable);
             var right = context.GetVariable(_rightVariable);
-            
+
             if (left is int leftInt && right is int rightInt)
             {
                 context.SetVariable(_resultVariable, leftInt + rightInt);
@@ -581,7 +581,7 @@ namespace DesignPatterns.Behavioral.Interpreter
         private static IScriptCommand? ParseCommand(string commandLine)
         {
             var parts = commandLine.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-            
+
             if (parts.Length >= 3 && parts[1] == "=")
             {
                 // Assignment: variable = value
